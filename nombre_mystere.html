@@ -13,16 +13,22 @@
         let continuer = true;
 
         while (continuer) {
-            let nombre = Number(prompt("Entrez un nombre ou laisser vide pour quitter."));
+            let nombre = prompt("Entrez un nombre ou laissez vide pour quitter.");
 
-            if (nombre == NOMBRE_MYSTERE) {
-                console.log("Bravo, vous avez trouvé le nombre mystère");
+            if (nombre === "") {
+                console.log("Vous avez quitté le jeu.");
                 continuer = false;
             } else {
-                if (nombre < NOMBRE_MYSTERE)
-                    console.log("Le nombre mystère est plus grand");
-                else
-                    console.log("Le nombre mystère est plus petit");
+                nombre = Number(nombre);
+
+                if (nombre === NOMBRE_MYSTERE) {
+                    console.log("Bravo, vous avez trouvé le nombre mystère !");
+                    continuer = false;
+                } else if (nombre < NOMBRE_MYSTERE) {
+                    console.log("Le nombre mystère est plus grand.");
+                } else {
+                    console.log("Le nombre mystère est plus petit.");
+                }
             }
         }
     </script>
