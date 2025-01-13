@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //déclarer une fonction addition qui prend 2 paramètres a et b et qui retourne la somme de ces 2 paramètres
+        /* function addition(a, b) {
+            return a + b;
+        }
+        let resultat = addition(12, 13);
+        console.log(resultat);
+
+
+
+        function affiche(a) {
+            console.log("a");
+
+        }
+        affiche(aurevoir);
+
+        function simple() {
+            console.log("Bonjour");
+        }
+        simple(); -->*/
+
+
+
+        //definir une boucle qui demande à l'utilisateur de saisir 2 nombres et qui affiche lequel est le plus grand a l'ai de de function compare
+        let continuer = true;
+        while (continuer) {
+            let a = Number(prompt("Entrez le premier nombre :"));
+            let b = Number(prompt("Entrez le deuxième nombre :"));
+
+            compare(a, b);
+
+            let reponse = prompt("Voulez-vous continuer ? (o/n)");
+            if (reponse === "n") {
+                continuer = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
