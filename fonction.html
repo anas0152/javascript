@@ -11,36 +11,46 @@
     <script>
         //déclarer une fonction addition qui prend 2 paramètres a et b et qui retourne la somme de ces 2 paramètres
         /* function addition(a, b) {
-            return a + b;
+             return a + b;
+         }
+         let resultat = addition(12, 13);
+         console.log(resultat);
+
+
+
+         function affiche(a) {
+             console.log("a");
+
+         }
+         affiche(aurevoir);
+
+         function simple() {
+             console.log("Bonjour");
+         }
+         simple();*/
+
+        function maximum(a, b) {
+            if (a > b) {
+                alert("a est plus grand que b");
+            } else if (a < b) {
+                alert("b est plus grand que a");
+            } else {
+                alert("a et b sont égaux");
+            }
         }
-        let resultat = addition(12, 13);
-        console.log(resultat);
 
 
-
-        function affiche(a) {
-            console.log("a");
-
-        }
-        affiche(aurevoir);
-
-        function simple() {
-            console.log("Bonjour");
-        }
-        simple(); -->*/
-
-
-
-        //definir une boucle qui demande à l'utilisateur de saisir 2 nombres et qui affiche lequel est le plus grand a l'ai de de function compare
         let continuer = true;
         while (continuer) {
             let a = Number(prompt("Entrez le premier nombre :"));
             let b = Number(prompt("Entrez le deuxième nombre :"));
 
-            compare(a, b);
+
+            maximum(a, b);
+
 
             let reponse = prompt("Voulez-vous continuer ? (o/n)");
-            if (reponse === "n") {
+            if (reponse.toLowerCase() === "n") {
                 continuer = false;
             }
         }
