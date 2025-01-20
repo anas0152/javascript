@@ -13,15 +13,15 @@
         " qui prend un nombre en paramètre et qui retourne la valeur absolue de ce nombre.Ecrire 3 appels de cette fonction avec 1 nombre >0, 1 nombre <0 et avec 0"
 
 
-        function valeurAbsolue(nombre) {
-            if (nombre < 0) {
-                return -nombre;
-            } else {
-                return nombre;
-            }
+        function valeurAbsolue(n) {
+            let valeurAbsolue = n;
+            if (valeurAbsolue < 0) valeurAbsolue = -valeurAbsolue;
+            return valeurAbsolue;
         }
-        let nombre = prompt("Entrez un nombre");
-        alert(valeurAbsolue(nombre));
+
+        console.log(valeurAbsolue(10)); // Nombre positif
+        console.log(valeurAbsolue(-5)); // Nombre négatif
+        console.log(valeurAbsolue(0)); // Zéro
     </script>
 
 </body>
