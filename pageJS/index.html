@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body></body>
+<div></div>
+
+<script>
+    let div = document.querySelector('div');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('texte.txt')
+            .then(response => response.text())
+            .then(text => div.innerHTML = text);
+    });
+</script>
+});
+</script>
+</body>
+
+</html>
